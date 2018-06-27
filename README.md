@@ -1,6 +1,9 @@
-# kaniko - Build Images In Kubernetes
+# kaniko-onprem - Build Images In Kubernetes in your local k8s cluster
 
 kaniko is a tool to build container images from a Dockerfile, inside a container or Kubernetes cluster.
+
+This fork allows container images to be built on your local k8s cluster. This feature is only supported
+on ppc64le platform as of now.
 
 kaniko doesn't depend on a Docker daemon and executes each command within a Dockerfile completely in userspace.
 This enables building container images in environments that can't easily or securely run a Docker daemon, such as a standard Kubernetes cluster.
